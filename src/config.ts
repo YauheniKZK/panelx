@@ -1,0 +1,5 @@
+export const Config = {
+  I18N_LOCALE: import.meta.env.VITE_APP_I18N_LOCALE,
+  I18N_FALLBACK_LOCALE: import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE,
+  SUPPORTED_LANGUAGES: import.meta.env.VITE_APP_SUPPORTED_LANGUAGES,
+};
