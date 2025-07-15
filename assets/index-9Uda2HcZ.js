@@ -2045,7 +2045,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   }
 `,Bz=Mo`
-  mutation RegisterTelegramUser(input: RegisterTelegramUserInput!) {
+  mutation RegisterTelegramUser($input: RegisterTelegramUserInput!) {
     registerTelegramUser(input: $input) {
       result {
         accessToken
