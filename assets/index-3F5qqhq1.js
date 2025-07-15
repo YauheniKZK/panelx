@@ -2058,7 +2058,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 `,d8=po`
   mutation CreateUserZone(
-    $userId: ID!
     $image: String
     $width: Int!
     $height: Int!
@@ -2070,7 +2069,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     $isgif: Boolean
   ) {
     createUserZone(
-      userId: $userId
       image: $image
       width: $width
       height: $height
