@@ -2034,6 +2034,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         firstName
         lastName
         email
+        telegramId
         roles {
           id
           name
