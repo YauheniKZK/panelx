@@ -7,6 +7,7 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { dirname } from 'path';
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/xogoogo/',
   plugins: [
     vue(),
     tailwindcss(),

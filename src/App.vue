@@ -5,6 +5,12 @@ import {
   NNotificationProvider,
 } from 'naive-ui';
 import Main from '@/layout/Main.vue';
+import WebApp from '@twa-dev/sdk'
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  WebApp.expand()
+})
 
 </script>
 

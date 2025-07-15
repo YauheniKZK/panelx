@@ -1,19 +1,16 @@
+import TrackEditor from '@/screens/editor/TrackEditor.vue'
+import Home from '@/screens/home/Home.vue'
+import Index from '@/screens/Index.vue'
+import Main from '@/layout/Main.vue'
+
 export default () => {
   return [
     {
       path: '/',
       name: 'main',
       redirect: { path: '/index' },
-      component: () => import('../layout/Main.vue'),
+      component: Main,
       children: [
-        {
-          path: '/auth',
-          name: 'auth',
-          meta: {
-            requiresAuth: false
-          },
-          component: () => import('../screens/login/Start.vue')
-        },
         {
           path: '/index',
           name: 'index',
@@ -21,7 +18,7 @@ export default () => {
             requiresAuth: true
           },
           redirect: { path: '/home' },
-          component: () => import('../screens/Index.vue'),
+          component: Index,
           children: [
             {
               path: '/home',
@@ -30,8 +27,8 @@ export default () => {
                 requiresAuth: true,
                 transition: ''
               },
-              component: () => import('../screens/home/Home.vue')
-            },
+              component: Home
+            }
           ]
         }
       ]
